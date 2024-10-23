@@ -71,7 +71,7 @@ const Navbar = () => {
               <a
                 key={cont.id}
                 href={cont.url}
-                className={`block w-8 h-8 text-white hover:text-blue-600 m-5 ${active === cont.title ? 'font-bold text-red-500' : ''}`}
+                className={`block w-9 h-9 text-white hover:text-blue-600 m-5 ${active === cont.title ? 'font-bold text-red-500' : ''}`}
               >
                 <img src={cont.src} alt={cont.name} />
               </a>

@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <div className='relative bottom-0'>
       hello
+      this is footer
       
     </div>
   )
