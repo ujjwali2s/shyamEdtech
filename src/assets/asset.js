@@ -13,7 +13,7 @@ const Navigation = () => [
     {
       id: 3,
       title: "Projects",
-      url: "/projects" // Fixed the typo from "/Proects" to "/projects"
+      url: "/projects" 
     },
     {
       id: 4,
@@ -22,22 +22,57 @@ const Navigation = () => [
     }
   ];
   
-  // Profile function returning an array of profile information
-  const Profile = () => [
+  // Social Media Icons
+  const Social = () => [
     {
       id: 1,
-      username: "Admin",
-      password: "poklji",
-      url: "/src/resource/fb.png"
+      name: "facebook",
+      href:"https//www.facebook.com",
+      src: "/src/resource/fb.png"
     },
     {
-      id: 1,
-      username: "hun",
-      password: "poklji",
-      url: "/src/resource/logo.png"
+      id: 2,
+      name: "Instagram",
+      href:"https//www.instagram.com",
+      src: "/src/resource/ig.png"
     },
-  ];
   
-  // Export both as named exports
-  export { Navigation, Profile };
+  {
+    id: 3,
+    name: "telegram",
+    href:"https//www.telegram.com",
+    src: "/src/resource/tg.png"
+  },
+  {
+    id: 4,
+    name: "github",
+    href:"https//www.github.com",
+    src: "/src/resource/git.png"
+  },
+];
+//contact details
+const Contact =()=>[
+{
+  id:1,
+  name:"phone",
+  details:"=91 7488746122",
+  url:"tel:+917488746122",
+  src:"/src/resource/telephone.png"
+},
+{
+  id:2,
+  name:"Email",
+  details:"admin@Shyamedtech.com",
+  url:"mailto:admin@Shyamedtech.com",
+  src:"/src/resource/email.png"
+},
+{
+  id:3,
+  name:"whatsapp",
+  details:"WhatsApp Us",
+  url:"https://wa.me/917488746122",
+  src:"/src/resource/wa.png"
+},
+]
+  export { Navigation, Social , Contact };
   
