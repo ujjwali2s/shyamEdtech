@@ -105,7 +105,7 @@ const cardContent =()=>[
     id:3,
     classN:"text-white bg-n-7 border-t-cyan-500 border-b-cyan-500 border-l-gray-500 border-r-gray-500",
     title:"this is third card title",
-    url:/src/resource/fb.png,
+    url:fbIcon,
     first:"this is website visible content this is as it is",
     second:`this is the main content which is hidden because it's two long to readt that's why i hide that content i hope
     you don't have any issue with that because it's is good to read`
