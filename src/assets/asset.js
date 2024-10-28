@@ -5,7 +5,13 @@ import gitIcon from '../resource/git.png';
 import telephoneIcon from '../resource/telephone.png';
 import emailIcon from '../resource/email.png';
 import waIcon from '../resource/wa.png';
-import fbIcon from '../resource/fb.png'
+import fbIcon from '../resource/fb.png';
+import Car1 from "../resource/web1.jpg"
+import Car2 from "../resource/social.avif"
+import Car3 from "../resource/graphic.jpg"
+import Car4 from "../resource/adver.jpg"
+import Car5 from "../resource/seo.jpg"
+
 const Navigation = () => [
     {
       id: 1,
@@ -57,7 +63,7 @@ const Navigation = () => [
     src:gitIcon
   },
 ];
-//contact details
+
 const Contact =()=>[
 {
   id:1,
@@ -119,15 +125,38 @@ const cardContent =()=>[
     second:`this is the main content which is hidden because it's two long to readt that's why i hide that content i hope
     you don't have any issue with that because it's is good to read`
   },
-
 ]
-const caurosel=()=>[
+const CarouselData=()=>[
   {
     id:1,
-    img:"",
-    title:"Web Devlopment",
-    short:""
-  }
+    img:Car1,
+    title:"Webisite & Application Devlopment",
+    short:"shoert "
+  },
+  {
+    id:2,
+    img:Car2,
+    title:"Social Media Marketing",
+    short:"short"
+  },
+  {
+    id:3,
+    img:Car3,
+    title:"Graphic Designing",
+    short:"short"
+  },
+  {
+    id:4,
+    img:Car4,
+    title:"Adverstisment & Promotion",
+    short:"short"
+  },
+  {
+    id:5,
+    img:Car5,
+    title:"SEO-Search Engine Optimizaton",
+    short:"short"
+  },
 ]
-  export { Navigation, Social , Contact ,cardContent, caurosel};
+  export { Navigation, Social , Contact ,cardContent, CarouselData};
   

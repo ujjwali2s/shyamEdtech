@@ -6,9 +6,8 @@ import Cards from './main/Cards'
 const Home = () => {
   return (
     <div>
-      
-      <Hero/>
       <Services/>
+      <Hero/>
     <Cards/>
     </div>
   )

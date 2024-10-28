@@ -48,7 +48,7 @@ function Hero() {
         >
           <Button 
             href="/about" 
-            className="text-white bg-black   transition duration-300 ease-in-out"
+            className="text-white bg-black font-playwrite  transition duration-300 ease-in-out"
             onClick={handleClick}
           >
             Explore More

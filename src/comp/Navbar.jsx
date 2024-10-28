@@ -50,12 +50,21 @@ const Navbar = () => {
           src={menuOpen ? Close : Menu}
           alt='menu'
           onClick={handleMenuToggle}
-          className='w-[30px] h-[30px] max-xs:w-[20px] max-xs:h-[20px]'
+          className='w-[30px] h-[30px] max-xs:w-[20px] z-10 max-xs:h-[20px]'
         />
       </div>
 
       {menuOpen && (
-        <div className='absolute top-16 right-0 bg-gray-800 w-3/6 h-4/4 p-4 sm:hidden'>
+        
+        <div className='absolute  right-0 top-0 bg-gray-800 w-screen h-screen p-4 z-10 sm:hidden'>
+          <div className='m-3 sm:hidden absolute right-1'>
+        <img
+          src={menuOpen ? Close : Menu}
+          alt='menu'
+          onClick={handleMenuToggle}
+          className='w-[30px] h-[30px] max-xs:w-[20px] z-10 max-xs:h-[20px]'
+        />
+      </div>
           {Navigation().map((nav) => (
             <a
               key={nav.id}

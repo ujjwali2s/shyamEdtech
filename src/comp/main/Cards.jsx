@@ -32,31 +32,7 @@ const Cards = () => {
       </div>
 
      
-      <style jsx>{`
-        .slide-card {
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-          position: relative;
-        }
-        .slide-card-inner {
-          width: 200%; /* twice the width to hold both front and back side by side */
-          display: flex;
-          transition: transform 0.5s ease;
-        }
-        .slide-card-front, .slide-card-back {
-          width: 50%; /* each takes half of the slide card width */
-          flex-shrink: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        
-       
-        .slide-card:hover .slide-card-inner {
-          transform: translateX(-50%); /* slide to the left to show the back content */
-        }
-      `}</style>
+     
     </div>
   );
 };
