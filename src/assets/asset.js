@@ -1,4 +1,11 @@
-// Navigation function returning an array of navigation items
+
+import igIcon from '../resource/ig.png';
+import tgIcon from '../resource/tg.png';
+import gitIcon from '../resource/git.png';
+import telephoneIcon from '../resource/telephone.png';
+import emailIcon from '../resource/email.png';
+import waIcon from '../resource/wa.png';
+import fbIcon from '../resource/fb.png'
 const Navigation = () => [
     {
       id: 1,
@@ -28,26 +35,26 @@ const Navigation = () => [
       id: 1,
       name: "facebook",
       url:"https//www.facebook.com",
-      src: "/src/resource/fb.png"
+      src: fbIcon
     },
     {
       id: 2,
       name: "Instagram",
       url:"https//www.instagram.com",
-      src: "/src/resource/ig.png"
+      src:igIcon
     },
   
   {
     id: 3,
     name: "telegram",
     url:"https//www.telegram.com",
-    src: "/src/resource/tg.png"
+    src: tgIcon
   },
   {
     id: 4,
     name: "github",
     url:"https//www.github.com",
-    src: "/src/resource/git.png"
+    src:gitIcon
   },
 ];
 //contact details
@@ -57,21 +64,21 @@ const Contact =()=>[
   name:"phone",
   details:"=91 7488746122",
   url:"tel:+917488746122",
-  src:"/src/resource/telephone.png"
+  src:telephoneIcon
 },
 {
   id:2,
   name:"Email",
   details:"admin@Shyamedtech.com",
   url:"mailto:admin@Shyamedtech.com",
-  src:"/src/resource/email.png"
+  src:emailIcon
 },
 {
   id:3,
   name:"whatsapp",
   details:"WhatsApp Us",
   url:"https://wa.me/917488746122",
-  src:"/src/resource/wa.png"
+  src:waIcon
 },
 ]
 
@@ -80,7 +87,7 @@ const cardContent =()=>[
     id:1,
     classN:"text-white  border-t-green-500 border-b-green-500 border-l-red-500 border-r-red-500 shadow-inner bg-n-5",
     title:"this is card title",
-    url:"/src/resource/ig.png",
+    url:igIcon,
     first:"this is website visible content this is as it is",
     second:`this is the main content which is hidden because it's two long to readt that's why i hide that content i hope
     you don't have any issue with that because it's is good to read`
@@ -89,7 +96,7 @@ const cardContent =()=>[
     id:2,
     classN:"text-white  bg-n-8 shadow-lg shadow-white-500/50 border-t-cyan-500 border-b-cyan-500 border-l-gray-500 border-r-gray-500 ",
     title:"this is  seond card title",
-    url:"/src/resource/tg.png",
+    url:tgIcon,
     first:"this is website visible content this is as it is",
     second:`this is the main content which is hidden because it's two long to readt that's why i hide that content i hope
     you don't have any issue with that because it's is good to read`
@@ -98,7 +105,7 @@ const cardContent =()=>[
     id:3,
     classN:"text-white bg-n-7 border-t-cyan-500 border-b-cyan-500 border-l-gray-500 border-r-gray-500",
     title:"this is third card title",
-    url:"/src/resource/fb.png",
+    url:/src/resource/fb.png,
     first:"this is website visible content this is as it is",
     second:`this is the main content which is hidden because it's two long to readt that's why i hide that content i hope
     you don't have any issue with that because it's is good to read`
@@ -107,7 +114,7 @@ const cardContent =()=>[
     id:4,
     classN:"text-white bg-n-9 border-b-green-500 border-l-red-500 border-r-red-500 shadow-inner bg-cyan-500",
     title:"this is card title",
-    url:"/src/resource/ig.png",
+    url:igIcon,
     first:"this is website visible content this is as it is",
     second:`this is the main content which is hidden because it's two long to readt that's why i hide that content i hope
     you don't have any issue with that because it's is good to read`
