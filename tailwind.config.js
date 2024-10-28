@@ -6,15 +6,19 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      
+      screens: {
+        'xs': '480px', 
+      },
       colors: {
         color: {
           1: "#AC6AFF",
           2: "#FFC876",
           3: "#FF776F",
           4: "#7ADB78",
-          5: "#858DFF",
-          6: "#FF98E2",
-          7: 'linear-gradient(to right, #FF98E2, #7ADB78)'
+          5: "#00ADB5",
+          6: "#F9ED69",
+          7: '#393E46'
         },
         stroke: {
           1: "#26242C",
@@ -24,11 +28,11 @@ export default {
           2: "#CAC6DD",
           3: "#ADA8C3",
           4: "#757185",
-          5: "#3F3A52",
-          6: "#252134",
-          7: "#15131D",
-          8: "#0E0C15",
-          9: "#474060",
+          5: "#243642",
+          6: "#E2F1E7",
+          7: '#387478',
+          8: "#629584",
+          9: "#FFA24C",
           10: "#43435C",
           11: "#1B1B2E",
           12: "#2E2A41",
@@ -39,6 +43,7 @@ export default {
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
+        playwrite: "Playwrite GB S",
       },
       letterSpacing: {
         tagline: ".15em",
@@ -76,6 +81,7 @@ export default {
         "conic-gradient":
           "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
       },
+      
     },
   },
   plugins: [
@@ -88,6 +94,10 @@ export default {
         },
         ".h1": {
           "@apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]":
+            {},
+        },
+        ".p": {
+          "@apply font-grotesk":
             {},
         },
         ".h2": {
@@ -127,7 +137,7 @@ export default {
           "@apply font-code text-xs font-bold uppercase tracking-wider": {},
         },
         ".a": {
-          "@apply font-code text-xs font-bold uppercase tracking-wider fami": {},
+          "@apply font-code text-xs font-bold uppercase tracking-wider fami max-xs:text-[2.75rem]": {},
         },
       });
       addUtilities({

@@ -1,0 +1,28 @@
+/* src/components/cursorAnimation.css */
+.custom-cursor {
+  position: fixed;
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+  background-image: url("../resource/target.png"); /* Your cursor image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  pointer-events: none; /* Prevent the cursor from blocking interactions */
+  transform: translate(-50%, -50%); /* Center the cursor */
+  animation: rotate 2s linear infinite;
+  transition: transform 0.05s ease-out; /* Smooth transition for cursor movement */
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); /* Combine translation and rotation */
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); /* Combine translation and rotation */
+  }
+}
+.flipcard{
+  animation: flip-card 0.5s linear alternate;
+  
+}
+

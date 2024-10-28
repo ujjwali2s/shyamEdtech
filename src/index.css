@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
 /* src/index.css */
 
@@ -20,6 +21,7 @@
   --font-code: "Source Code Pro", monospace;
   --font-grotesk: "Space Grotesk", sans-serif;
   color-scheme: dark;
+  color: black;
 }
 
 * {
@@ -29,10 +31,14 @@
 
 @layer base {
   body {
-    @apply font-grotesk bg-n-6 text-n-1 text-base;
+    @apply font-grotesk bg-white text-black text-base;
+    
   }
 }
 
+body:hover{
+  cursor: none;
+}
 .rotate-45 {
   @apply rotate-[45deg]
 }
@@ -96,3 +102,56 @@
 .-rotate-360 {
   @apply rotate-[-360deg]
 }
+
+.buttonborder {
+  display: block;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  
+
+  position: relative;
+  z-index: 1;
+  margin-top: -15px;
+  overflow: hidden;
+  border: 3px solid transparent; /* Set initial border for compatibility */
+  border-image: linear-gradient(to left, #ef9712, #c6d9ff, #1dc607);
+  border-image-slice: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+
+.buttonborder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background: #37474f;
+  z-index: -1;
+  -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+.buttonborder:hover {
+  color: black;
+  border-image: linear-gradient(to right, #ef12ce, #074fdf, #c67007) 1;
+  cursor: pointer;
+}
+.buttonborder:hover::before {
+  opacity: 1;
+  background-color: white;
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 2, 0deg);
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+

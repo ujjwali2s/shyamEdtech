@@ -27,26 +27,26 @@ const Navigation = () => [
     {
       id: 1,
       name: "facebook",
-      href:"https//www.facebook.com",
+      url:"https//www.facebook.com",
       src: "/src/resource/fb.png"
     },
     {
       id: 2,
       name: "Instagram",
-      href:"https//www.instagram.com",
+      url:"https//www.instagram.com",
       src: "/src/resource/ig.png"
     },
   
   {
     id: 3,
     name: "telegram",
-    href:"https//www.telegram.com",
+    url:"https//www.telegram.com",
     src: "/src/resource/tg.png"
   },
   {
     id: 4,
     name: "github",
-    href:"https//www.github.com",
+    url:"https//www.github.com",
     src: "/src/resource/git.png"
   },
 ];
@@ -74,5 +74,53 @@ const Contact =()=>[
   src:"/src/resource/wa.png"
 },
 ]
-  export { Navigation, Social , Contact };
+
+const cardContent =()=>[
+  {
+    id:1,
+    classN:"text-white  border-t-green-500 border-b-green-500 border-l-red-500 border-r-red-500 shadow-inner bg-n-5",
+    title:"this is card title",
+    url:"/src/resource/ig.png",
+    first:"this is website visible content this is as it is",
+    second:`this is the main content which is hidden because it's two long to readt that's why i hide that content i hope
+    you don't have any issue with that because it's is good to read`
+  },
+  {
+    id:2,
+    classN:"text-white  bg-n-8 shadow-lg shadow-white-500/50 border-t-cyan-500 border-b-cyan-500 border-l-gray-500 border-r-gray-500 ",
+    title:"this is  seond card title",
+    url:"/src/resource/tg.png",
+    first:"this is website visible content this is as it is",
+    second:`this is the main content which is hidden because it's two long to readt that's why i hide that content i hope
+    you don't have any issue with that because it's is good to read`
+  },
+  {
+    id:3,
+    classN:"text-white bg-n-7 border-t-cyan-500 border-b-cyan-500 border-l-gray-500 border-r-gray-500",
+    title:"this is third card title",
+    url:"/src/resource/fb.png",
+    first:"this is website visible content this is as it is",
+    second:`this is the main content which is hidden because it's two long to readt that's why i hide that content i hope
+    you don't have any issue with that because it's is good to read`
+  },
+  {
+    id:4,
+    classN:"text-white bg-n-9 border-b-green-500 border-l-red-500 border-r-red-500 shadow-inner bg-cyan-500",
+    title:"this is card title",
+    url:"/src/resource/ig.png",
+    first:"this is website visible content this is as it is",
+    second:`this is the main content which is hidden because it's two long to readt that's why i hide that content i hope
+    you don't have any issue with that because it's is good to read`
+  },
+
+]
+const caurosel=()=>[
+  {
+    id:1,
+    img:"",
+    title:"Web Devlopment",
+    short:""
+  }
+]
+  export { Navigation, Social , Contact ,cardContent, caurosel};
   
