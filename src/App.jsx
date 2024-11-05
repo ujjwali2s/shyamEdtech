@@ -6,6 +6,7 @@ import Navbar from './comp/Navbar'
 import Footer from './comp/Footer'
 import CursorAnimation from "./assets/CursorAnimation"
 import Home from './comp/Home'
+import About from './comp/About.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
       <Footer/>
     </Router>

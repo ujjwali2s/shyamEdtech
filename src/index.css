@@ -110,18 +110,14 @@ body:hover{
   padding: 10px 30px;
   background-color: black;
   color: white;
-  
-
   position: relative;
   z-index: 1;
-  margin-top: -15px;
   overflow: hidden;
   border: 3px solid transparent; /* Set initial border for compatibility */
   border-image: linear-gradient(to left, #ef9712, #c6d9ff, #1dc607);
   border-image-slice: 1;
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
- 
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
@@ -131,6 +127,7 @@ body:hover{
   content: '';
   position: absolute;
   top: 0;
+  padding: ;
   left: 0;
   width: 150%;
   height: 100%;

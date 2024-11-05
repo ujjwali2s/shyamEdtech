@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Contact, Navigation } from "../assets/asset"; // Ensure this path is correct
-import Logo from "../resource/logo.png";
-import Menu from "../resource/list.png";
-import Close from "../resource/close.png";
+import Logo from "../assets/resource/logo.png";
+import Menu from "../assets/resource/list.png";
+import Close from "../assets/resource/close.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // Initialize to false

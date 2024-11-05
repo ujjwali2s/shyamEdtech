@@ -3,7 +3,7 @@
   position: fixed;
   width: 30px; /* Set the desired width */
   height: 30px; /* Set the desired height */
-  background-image: url("../resource/target.png"); /* Your cursor image */
+  background-image: url("./resource/target.png"); /* Your cursor image */
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 9999;
