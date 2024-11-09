@@ -1,10 +1,13 @@
 import React from 'react'
-import Hero from "./main/Hero"
+import SHero from './main/CenterCards'
+import AboutMain from "./main/AboutMain"
+
 
 const About = () => {
   return (
     <div>
-        <Hero/>
+        <SHero/>
+        <AboutMain/>
       
     </div>
   )

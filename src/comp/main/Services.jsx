@@ -1,29 +1,31 @@
 import { useState, useEffect } from 'react';
+import {CarouselData} from "../../assets/asset.js"
 
-const slides = [
-  {
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
-    header: "Majestic Mountains",
-    subheader: "Explore the peaks of adventure"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1520962880247-cfaf541c8724",
-    header: "Ocean Serenity",
-    subheader: "Discover coastal paradise"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
-    header: "Forest Whispers",
-    subheader: "Nature's hidden secrets"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
-    header: "Enchanted Woods",
-    subheader: "Journey through mystical paths"
-  }
-];
+// const slides = [
+//   {
+//     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+//     header: "Majestic Mountains",
+//     subheader: "Explore the peaks of adventure"
+//   },
+//   {
+//     image: "https://images.unsplash.com/photo-1520962880247-cfaf541c8724",
+//     header: "Ocean Serenity",
+//     subheader: "Discover coastal paradise"
+//   },
+//   {
+//     image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
+//     header: "Forest Whispers",
+//     subheader: "Nature's hidden secrets"
+//   },
+//   {
+//     image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
+//     header: "Enchanted Woods",
+//     subheader: "Journey through mystical paths"
+//   }
+// ];
 
-export const Carousel = () => {
+ const Carousel = () => {
+  const slides = CarouselData();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [showSubheader, setShowSubheader] = useState(false);
@@ -40,7 +42,7 @@ export const Carousel = () => {
     setDisplayText('');
     setShowSubheader(false);
     let currentText = '';
-    const headerText = slides[currentIndex].header;
+    const headerText = slides[currentIndex].title;
     
     const typeInterval = setInterval(() => {
       if (currentText.length < headerText.length) {
@@ -72,24 +74,24 @@ export const Carousel = () => {
           >
             <div className="relative h-full w-full">
               <img
-                src={slide.image}
-                alt={slide.header}
-                className="h-full w-full object-cover"
+                src={slide.img}
+                alt={slide.title}
+                className="h-full w-full object-cover opacity-75"
               />
-              <div className="absolute inset-0 bg-black/40" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-                <h1 className="mb-4 text-6xl font-bold">
-                  {active ? displayText : slide.header}
-                  {active && displayText.length < slide.header.length && (
+              <div className="absolute inset-0 bg-black/60 snap-align-none"  />
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-white overflow-auto">
+                <h2 className="mb-4 text-6xl  font-bold  snap-align-none">
+                  {active ? displayText : slide.title}
+                  {active && displayText.length < slide.title.length && (
                     <span className="animate-pulse">|</span>
                   )}
-                </h1>
+                </h2>
                 <p
                   className={`text-2xl transition-opacity duration-1000 ${
                     active && showSubheader ? 'opacity-100' : 'opacity-0'
                   }`}
                 >
-                  {slide.subheader}
+                  {slide.short}
                 </p>
               </div>
             </div>
@@ -113,3 +115,5 @@ export const Carousel = () => {
     </div>
   );
 };
+export default Carousel;
+ 

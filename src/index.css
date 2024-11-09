@@ -20,21 +20,19 @@
   --font-sora: "Sora", sans-serif;
   --font-code: "Source Code Pro", monospace;
   --font-grotesk: "Space Grotesk", sans-serif;
-  color-scheme: dark;
+
   color: black;
+     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-* {
-  scroll-behavior:smooth;
-  overflow-x: hidden;
-  
-  
-}
+
 
 @layer base {
   body {
     @apply font-grotesk bg-white text-black text-base;
-    
+ 
   }
 }
 
