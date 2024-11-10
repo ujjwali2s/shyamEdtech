@@ -3,6 +3,7 @@ import Services from './main/Services'
 import Cards from './main/Cards'
 import Testimonial from './main/Testimonial.jsx'
 import Award from './main/Award.jsx'
+import ProcessSection from './main/ProcessSection.jsx';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Cards/>
       <Testimonial/>
       <Award/>
+      <ProcessSection />
     </div>
   )
 }

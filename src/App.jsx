@@ -8,6 +8,7 @@ import CursorAnimation from "./assets/CursorAnimation"
 import Home from './comp/Home'
 import About from './comp/About.jsx'
 import Contact from './comp/Contact.jsx'
+import OurServices from './comp/main/OurServices.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/Contact' element={<Contact/>}/>
+        <Route path='/services' element={<OurServices/>}/>
       </Routes>
       <Footer/>
     </Router>

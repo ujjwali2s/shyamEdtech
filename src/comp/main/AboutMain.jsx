@@ -45,7 +45,7 @@ export default function AboutSection() {
       <div className="absolute top-0 left-0 right-0 h-16">
         <svg className="absolute bottom-0 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54">
           <path
-            fill="#f3f4f6"
+            fill="#C7D66D"
             fillOpacity="1"
             d="M0,32L48,26.7C96,21,192,11,288,16C384,21,480,43,576,48C672,53,768,43,864,37.3C960,32,1056,32,1152,32C1248,32,1344,32,1392,32L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
@@ -116,7 +116,7 @@ export default function AboutSection() {
       <div className="absolute bottom-0 left-0 right-0 h-16">
         <svg className="absolute bottom-0 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54">
           <path
-            fill="#f9fafb"
+            fill="#75B9BE"
             fillOpacity="1"
             d="M0,32L48,37.3C96,43,192,53,288,48C384,43,480,21,576,16C672,11,768,21,864,26.7C960,32,1056,32,1152,32C1248,32,1344,32,1392,32L1440,32L1440,54L1392,54C1344,54,1248,54,1152,54C1056,54,960,54,864,54C768,54,672,54,576,54C480,54,384,54,288,54C192,54,96,54,48,54L0,54Z"
           ></path>
