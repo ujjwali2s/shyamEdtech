@@ -90,7 +90,7 @@ const ContactForm = () => {
             <label className="block text-sm font-medium text-gray-700">Contact</label>
             <input
               type="tel"
-              name="send_contact" 
+              name="user_contact" 
               maxLength="14"
               pattern="^\+?\d{1,10}$" 
               required
