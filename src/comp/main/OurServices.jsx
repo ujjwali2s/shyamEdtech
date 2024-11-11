@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiMonitor, FiSmartphone, FiDatabase, FiLayers, FiCode, FiGlobe, FiServer, FiShoppingCart } from 'react-icons/fi';
 import { SiAndroid, SiApple, SiWindows } from 'react-icons/si';
+import Hero from './Hero';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -20,6 +21,8 @@ const staggerContainer = {
 
 export default function ServicesPage() {
   return (
+    <div>
+      <Hero/>
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Web Development Section */}
       <section className="py-20">
@@ -50,11 +53,11 @@ export default function ServicesPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div variants={fadeInUp} className="order-2 lg:order-1">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl transform rotate-3 scale-105 opacity-20 blur-xl" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl  transform rotate-3 scale-105 opacity-20 blur-xl" />
                   <img
                     src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3"
                     alt="Static Websites"
-                    className="rounded-2xl shadow-2xl relative z-10"
+                    className="rounded-2xl shadow-2xl relative z-10 h-[500px] w-full"
                   />
                 </div>
               </motion.div>
@@ -263,6 +266,7 @@ export default function ServicesPage() {
           </motion.div>
         </div>
       </section>
+    </div>
     </div>
   );
 }

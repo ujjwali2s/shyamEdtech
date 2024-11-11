@@ -7,7 +7,7 @@
 
 .carousel-slide {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
   width: 100%;
 }
 
@@ -42,4 +42,14 @@
 
 .carousel-dot.active {
   background-color: #333;
+}
+@media (max-width: 768px) {
+  .client-slider {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .client-slide {
+    width: 100%; /* Make each slide take the full width */
+    margin: 0 auto;
+  }
 }

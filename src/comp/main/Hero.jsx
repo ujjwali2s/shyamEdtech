@@ -23,7 +23,7 @@ function Hero() {
   };
 
   return (
-    <div className="App h-[50vh] max-w-screen-2xl bganimate flex items-center justify-center">
+    <div className="h-[50vh] w-[100vw] bganimate flex items-center justify-center">
       <div className="flex flex-col items-center p-4 text-center">
         <motion.h1
           className="m-5 p-5 text-fuchsia-500 text-4xl md:text-4xl lg:text-6xl w-[50%] max-sm:w-[70%] font-bold leading-tight max-w-3xl"

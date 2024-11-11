@@ -10,7 +10,15 @@ import Car2 from "./resource/social.avif";
 import Car3 from "./resource/graphic.jpg";
 import Car4 from "./resource/adver.jpg";
 import Car5 from "./resource/seo.jpg";
+import thala from "./resource/thala.png";
+import fairbet from "./resource/fairbet.png";
+import indus from "./resource/indus.avif";
+import shoppre from "./resource/shoppre.png";
+import nurse from "./resource/nurse.png";
+import nsn from "./resource/nsn.jpg";
+import Valid from "./resource/valid.jpg";
 import { FiCode, FiPenTool, FiTrendingUp, FiShare2 } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiClock } from 'react-icons/fi';
 
 const Navigation = () => [
   {
@@ -74,8 +82,8 @@ const Contact = () => [
   {
     id: 2,
     name: "Email",
-    details: "admin@Shyamedtech.com",
-    url: "mailto:admin@Shyamedtech.com",
+    details: "contact@Shyamedtech.com",
+    url: "mailto:contact@Shyamedtech.com",
     src: emailIcon
   },
   {
@@ -123,51 +131,51 @@ const cardContent = () => [
 ];
 
 const CarouselData = () => [
-  { img: Car1, title: "Website & Application Development", short: "short" },
-  { img: Car2, title: "Social Media Marketing", short: "short" },
-  { img:Car3, title: "Graphic Designing", short: "short" },
-  { img: Car4, title: "Advertisement & Promotion", short: "short" },
-  { img: Car5, title: "SEO - Search Engine Optimization", short: "short" }
+  { img: Car1, title: "Website & Application Development", short: "We specialize in creating high-quality websites and applications, combining modern design with seamless functionality to deliver user-friendly, responsive, and efficient digital solutions tailored to your business needs." },
+  { img: Car2, title: "Social Media Marketing", short: "Boost your brand’s online presence with our expert social media marketing. We create engaging content and targeted campaigns to increase visibility, drive traffic, and build loyal audiences." },
+  { img:Car3, title: "Graphic Designing", short: "Transform your ideas into stunning visuals with our graphic design services. From logos to branding, we craft designs that captivate, inspire, and communicate your brand's unique identity." },
+  { img: Car4, title: "Advertisement & Promotion", short: "Boost your brand’s visibility and reach with targeted advertisement and promotion strategies. We create compelling campaigns that engage your audience and drive impactful results across multiple platforms." },
+  { img: Car5, title: "SEO - Search Engine Optimization", short: "Enhance your online presence with SEO services designed to improve visibility and ranking on search engines. Our approach drives organic traffic, boosts credibility, and maximizes your reach." }
 ];
 
 const Testimonials =()=> [
   {
-    name: "Sarah Johnson",
-    role: "CEO, TechStart",
+    name: "Amit Sharma",
+    role: "CEO, Thala7",
     content: "The web development team delivered beyond our expectations. Our new site has increased conversions by 150%!",
     image: "https://i.pravatar.cc/150?img=1",
-    company: "TechStart Solutions"
+    company: "Thala7 Solutions"
   },
   {
-    name: "Michael Chen",
-    role: "Marketing Director",
+    name: "Sanjeet Garg",
+    role: "Director",
     content: "Their SEO expertise helped us reach page one of Google. Our organic traffic has doubled in just 3 months.",
     image: "https://i.pravatar.cc/150?img=2",
     company: "Digital Growth Inc"
   },
   {
-    name: "Emma Davis",
-    role: "Creative Director",
+    name: "Ramesh Chandra Naiydu",
+    role: "Director",
     content: "The design work was exceptional. They truly understood our brand and brought it to life beautifully.",
     image: "https://i.pravatar.cc/150?img=3",
-    company: "Creative Studios"
+    company: "Nurse Recruiter"
   },
   {
-    name: "James Wilson",
+    name: "Nigam Patel",
     role: "E-commerce Manager",
     content: "Their social media strategy transformed our online presence. We've seen a 200% increase in engagement!",
     image: "https://i.pravatar.cc/150?img=4",
-    company: "Shop Direct"
+    company: "Patel Shops"
   },
   {
-    name: "Lisa Thompson",
+    name: "Aman Kumar",
     role: "Startup Founder",
     content: "From concept to launch, they guided us through every step. Our app has gained 50k users in just two months!",
     image: "https://i.pravatar.cc/150?img=5",
     company: "InnovateTech"
   },
   {
-    name: "David Kim",
+    name: "Rahul singh",
     role: "Product Manager",
     content: "The UI/UX design improved our user satisfaction scores by 45%. Couldn't be happier with the results.",
     image: "https://i.pravatar.cc/150?img=6",
@@ -202,4 +210,19 @@ const Services =()=> [
     color: "from-orange-500 to-yellow-400"
   }
 ];
-export { Navigation, Social, Contact, cardContent ,CarouselData,Testimonials,Services};
+const ContactItems =()=> [
+  { icon: FiMail, title: 'Email', content: 'contact@shyamedtech.com' },
+  { icon: FiPhone, title: 'Phone', content: '+91 7488746122' },
+  { icon: FiMapPin, title: 'Location', content: ['Jamshedpur', 'Jharkhand, India'] },
+  { icon: FiClock, title: 'Business Hours', content: ['Mon-Fri: 9:00 AM - 6:00 PM', 'Sat: 10:00 AM - 4:00 PM', 'Sun: Closed'] }
+];
+const Clients =()=> [
+  { name: 'Thala7', logo: thala,link:"https://thala7.in/" },
+  { name: 'NurseRecruiter', logo:nurse , link:"https://www.nurserecruiter.com/" },
+  { name: 'ValidationRecruiter', logo:Valid , link:"https://validationrecruiter.com/"},
+  { name: 'FairBet', logo:fairbet,link:"https://fairbet.store/" },
+  { name: 'NSNBlog', logo:nsn ,link:"https://nsn-blog2.onrender.com"},
+  { name: 'Indus', logo:indus , link:"https://www.inddus.com/"},
+  { name: 'ShopPre', logo:shoppre , link:"https://www.shoppre.com/" },
+];
+export { Navigation, Social, Contact, cardContent ,CarouselData,Testimonials,Services,ContactItems,Clients};

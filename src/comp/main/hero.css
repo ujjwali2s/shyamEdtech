@@ -8,19 +8,19 @@
 
 @keyframes fade-in {
     0% {
-        background-image: url('../../resource/p6.jpg');
+        background-image: url('../../assets/resource/p6.jpg');
     }
     25% {
-        background-image: url('../../resource/p12.jpg');
+        background-image: url('../../assets/resource/p12.jpg');
     }
     50% {
-        background-image: url('../../resource/p9.jpg');
+        background-image: url('../../assets/resource/p9.jpg');
     }
     75% {
-        background-image: url('../../resource/p10.jpg');
+        background-image: url('../../assets/resource/p10.jpg');
     }
     100% {
-        background-image: url('../../resource/p11.avif');
+        background-image: url('../../assets/resource/p11.avif');
     }
    
 }

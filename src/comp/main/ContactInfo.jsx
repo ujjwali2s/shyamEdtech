@@ -1,13 +1,8 @@
 import { motion } from 'framer-motion';
-import { FiMail, FiPhone, FiMapPin, FiClock } from 'react-icons/fi';
 
+import {ContactItems} from "../../assets/asset"
 const ContactInfo = () => {
-  const contactItems = [
-    { icon: FiMail, title: 'Email', content: 'contact@yourcompany.com' },
-    { icon: FiPhone, title: 'Phone', content: '+91 1234567890' },
-    { icon: FiMapPin, title: 'Location', content: ['Jamshedpur', 'Jharkhand, India'] },
-    { icon: FiClock, title: 'Business Hours', content: ['Mon-Fri: 9:00 AM - 6:00 PM', 'Sat: 10:00 AM - 4:00 PM', 'Sun: Closed'] }
-  ];
+  const contactItems = ContactItems();
 
   return (
     <div className="space-y-6">
@@ -30,7 +25,7 @@ const ContactInfo = () => {
                   <p key={i} className="text-gray-600">{line}</p>
                 ))
               ) : (
-                <p className="text-gray-600">{item.content}</p>
+                <p className="text-gray-600 md:text-xl text-xs">{item.content}</p>
               )}
             </div>
           </div>

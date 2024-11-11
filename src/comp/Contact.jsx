@@ -7,8 +7,9 @@ import { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-12 px-4 sm:px-6 lg:px-8">]
-    <Hero/>
+    <div><Hero/>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-12 px-4 sm:px-6 lg:px-8">
+    
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -36,14 +37,11 @@ const Contact = () => {
           transition={{ delay: 1 }}
           className="mt-16 text-center"
         >
-          <img
-            src="/contact-illustration.svg"
-            alt="Contact illustration"
-            className="max-w-md mx-auto"
-          />
+          
         </motion.div>
       </div>
       <Toaster position="bottom-right" />
+    </div>
     </div>
   );
 };
