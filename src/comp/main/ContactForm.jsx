@@ -8,7 +8,7 @@ const ContactForm = () => {
   const [loading, setLoading] = useState(false);
 
   // Initialize EmailJS with your public key
-  emailjs.init("1YgyEFi60SkeDcHGE"); // Replace with your actual public key
+  emailjs.init("UyMzZSeB6vvFIpIjw"); // Replace with your actual public key
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,12 +20,14 @@ const ContactForm = () => {
       from_name: formData.get('user_name'),
       reply_to: formData.get('user_email'),
       message: formData.get('message'),
-      to_name: 'ShyamEdTEch', // Customize this
+      send_email: formData.get('user_email'), // Adding the user's email here
+      send_contact: formData.get('user_contact'), // Adding the user's email here
+      to_name: 'ShyamEdTEch', // Customize this if needed
     };
 
     emailjs.send(
-      'default_service', // Replace with your EmailJS service ID
-      'template_k9mmkv1', // Replace with your EmailJS template ID
+      'service_p439cfc', // Replace with your EmailJS service ID
+      'template_4dneeto', // Replace with your EmailJS template ID
       templateParams
     )
     .then(() => {
@@ -78,6 +80,22 @@ const ContactForm = () => {
               required
               className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-all duration-300"
               placeholder="john@example.com"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            <label className="block text-sm font-medium text-gray-700">Contact</label>
+            <input
+              type="tel"
+              name="send_contact" 
+              maxLength="14"
+              pattern="^\+?\d{1,10}$" 
+              required
+              className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-all duration-300"
+              placeholder="+12345678901"
             />
           </motion.div>
           <motion.div
