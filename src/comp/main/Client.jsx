@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react';
 import { Clients } from '../../assets/asset';
 
 const ClientSlider = () => {
-  const clients =Clients();
+  const clients = Clients();
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    // Automatically cycle through slides every 2 seconds
+    // Automatically cycle through slides every 3 seconds
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % clients.length);
     }, 3000);
@@ -44,13 +44,19 @@ const ClientSlider = () => {
             <motion.div
               key={client.name}
               animate={{
-                scale: index === 1 ? 1.2 : 0.9, // Center slide is larger
-                opacity: index === 1 ? 1 : 0.6  // Side slides are dimmed
+                scale: index === 1 ? 1.2 : 1,  // Center slide is larger
+                opacity: index === 1 ? 1 : 0.8  // Side slides are dimmed
               }}
               transition={{ duration: 0.8 }}
-              className="md:w-[250px] md:h-[250px] w-full h-[110px] bg-white rounded-zxz shadow-md p-5 flex flex-col items-center justify-center transition-all duration-700 hover:shadow-lg"
+              className="w-full sm:w-[200px] md:w-[250px] h-[200px] bg-white rounded-lg shadow-md p-5 flex flex-col items-center justify-center transition-all duration-700 hover:shadow-lg"
             >
-             <a href={client.link} target="_blank" rel="noopener noreferrer"><img src={client.logo} alt={client.name}  /></a> 
+              <a href={client.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="max-h-[100px] object-contain"
+                />
+              </a>
               <span className="text-md font-semibold text-gray-700 text-center">
                 {client.name}
               </span>
