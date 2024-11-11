@@ -18,7 +18,7 @@ const ContactForm = () => {
     const formData = new FormData(formRef.current);
     const templateParams = {
       from_name: formData.get('user_name'),
-      reply_to: formData.get('ujjwalis493@gmail.com'),
+      reply_to: formData.get('user_email'),
       message: formData.get('message'),
       to_name: 'ShyamEdTEch', // Customize this
     };

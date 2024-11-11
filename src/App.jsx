@@ -9,6 +9,7 @@ import Home from './comp/Home'
 import About from './comp/About.jsx'
 import Contact from './comp/Contact.jsx'
 import OurServices from './comp/main/OurServices.jsx'
+import Notfound from './Notfound.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/services' element={<OurServices/>}/>
+        <Route path='*' element={<Notfound/>}/>
       </Routes>
       <Footer/>
     </Router>

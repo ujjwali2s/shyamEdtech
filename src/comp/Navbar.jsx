@@ -95,6 +95,7 @@ export default function Navbar() {
      
       <AnimatePresence>
         {isOpen && (
+          
           <motion.div
             initial="closed"
             animate="open"
@@ -102,7 +103,7 @@ export default function Navbar() {
             variants={menuVariants}
             className="fixed inset-0 bg-gray-900 z-40 flex flex-col items-center justify-center"
           >
-            
+             <h2 className="absolute top-10 left-8 text-white text-xl focus:outline-none">Shyam<span className='text-red-500'>Ed</span>Tech</h2>
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-8 right-8 text-white text-3xl focus:outline-none"
@@ -110,6 +111,7 @@ export default function Navbar() {
             >
               <FiX />
             </button>
+           
             
           
             <div className="flex flex-col items-center justify-center space-y-8">
@@ -158,6 +160,7 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
+      
     </nav>
   );
 }
