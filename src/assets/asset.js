@@ -17,8 +17,11 @@ import shoppre from "./resource/shoppre.png";
 import nurse from "./resource/nurse.png";
 import nsn from "./resource/nsn.jpg";
 import Valid from "./resource/valid.jpg";
+import baba from "./resource/baba.jpg";
+import nisan from "./resource/nisan.jpg";
 import { FiCode, FiPenTool, FiTrendingUp, FiShare2 } from 'react-icons/fi';
 import { FiMail, FiPhone, FiMapPin, FiClock } from 'react-icons/fi';
+import { title } from 'framer-motion/client';
 
 const Navigation = () => [
   {
@@ -131,6 +134,8 @@ const cardContent = () => [
 ];
 
 const CarouselData = () => [
+  { img:baba, title:"", short:""},
+  
   { img: Car1, title: "Website & Application Development", short: "We specialize in creating high-quality websites and applications, combining modern design with seamless functionality to deliver user-friendly, responsive, and efficient digital solutions tailored to your business needs." },
   { img: Car2, title: "Social Media Marketing", short: "Boost your brand’s online presence with our expert social media marketing. We create engaging content and targeted campaigns to increase visibility, drive traffic, and build loyal audiences." },
   { img:Car3, title: "Graphic Designing", short: "Transform your ideas into stunning visuals with our graphic design services. From logos to branding, we craft designs that captivate, inspire, and communicate your brand's unique identity." },
