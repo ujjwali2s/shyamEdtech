@@ -20,7 +20,7 @@ import Valid from "./resource/valid.jpg";
 import baba from "./resource/baba.jpg";
 import nisan from "./resource/nisan.jpg";
 import { FiCode, FiPenTool, FiTrendingUp, FiShare2 } from 'react-icons/fi';
-import { FiMail, FiPhone, FiMapPin, FiClock } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiClock ,FiLinkedin} from 'react-icons/fi';
 import { title } from 'framer-motion/client';
 
 const Navigation = () => [
@@ -39,6 +39,11 @@ const Navigation = () => [
     title: "Services",
     url: "/services" 
   },
+  // {
+  //   id: 5,
+  //   title: "Projects",
+  //   url: "/projects" 
+  // },
   {
     id: 4,
     title: "Contact Us",
@@ -51,13 +56,13 @@ const Social = () => [
   {
     id: 1,
     name: "Facebook",
-    url: "https://www.facebook.com",
+    url: "https://www.facebook.com/shyamedtech",
     src: fbIcon
   },
   {
     id: 2,
     name: "Instagram",
-    url: "https://www.instagram.com",
+    url: "https://www.instagram.com/shyamedtech",
     src: igIcon
   },
   {
@@ -69,9 +74,10 @@ const Social = () => [
   {
     id: 4,
     name: "GitHub",
-    url: "https://www.github.com",
+    url: "https://www.github.com/ujjwali2s",
     src: gitIcon
   },
+ 
 ];
 
 const Contact = () => [
