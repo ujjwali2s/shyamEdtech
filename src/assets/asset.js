@@ -20,7 +20,8 @@ import Valid from "./resource/valid.jpg";
 import baba from "./resource/baba.jpg";
 import nisan from "./resource/nisan.jpg";
 import { FiCode, FiPenTool, FiTrendingUp, FiShare2 } from 'react-icons/fi';
-import { FiMail, FiPhone, FiMapPin, FiClock ,FiLinkedin} from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiClock } from 'react-icons/fi';
+import { FiInstagram, FiTwitter, FiFacebook, FiLinkedin, FiYoutube } from 'react-icons/fi';
 import { title } from 'framer-motion/client';
 
 const Navigation = () => [
@@ -236,4 +237,56 @@ const Clients =()=> [
   { name: 'Indus', logo:indus , link:"https://www.inddus.com/"},
   { name: 'ShopPre', logo:shoppre , link:"https://www.shoppre.com/" },
 ];
-export { Navigation, Social, Contact, cardContent ,CarouselData,Testimonials,Services,ContactItems,Clients};
+const Platforms =()=> [
+  {
+    id:1,
+    icon: FiInstagram,
+    name: 'Website Devlopment',
+    description: 'At ShyamedTech, we create modern, responsive websites designed to meet your unique needs. Our innovative designs and expert development turn your ideas into seamless, impactful digital experiences that drive success.',
+    stats: '100+ Repeated Users',
+    color: 'from-pink-500 to-purple-500'
+  },
+  {
+    id:2,
+    icon: FiTwitter,
+    name: 'E-commerce',
+    description: 'At ShyamedTech, we create innovative e-commerce platforms functionality. Our customized solutions deliver seamless shopping, secure payments,empowering your online business to succeed and grow effortlessly.',
+    stats: '350+ Daily Products',
+    color: 'from-blue-400 to-blue-500'
+  },
+  {
+    id:3,
+    icon: FiFacebook,
+    name: 'Full Stack Devlopment',
+    description: 'At ShyamedTech, we deliver comprehensive full-stack development services. From intuitive front-end designs to back-end solutions,we create scalable,secure applications to meet your business goals and user needs.',
+    stats: '50+ Expert Devloper',
+    color: 'from-pink-500 to-purple-500'
+  },
+  {
+    id:4,
+    icon: FiFacebook,
+    name: 'Application Devlopment',
+    description: 'we excel in application development, creating scalable, user-friendly solutions tailored to your needs. From concept to deployment, we ensure seamless performance, innovation, and reliability for your business success.',
+    stats: '2.9B+ Active Users',
+    color: 'from-red-600 to-green-700'
+  },
+  {
+    id:5,
+    icon: FiFacebook,
+    name: 'software devlopment ',
+    description: 'we provide best software development services, building scalable, and tailored solutions. Our innovative approach ensures  performance, empowering your business with cutting-edge technology for optimal growth and success.',
+    stats: '2.9B+ Active Users',
+    color: 'from-blue-600 to-blue-700'
+  },
+  {
+    id:6,
+    icon: FiFacebook,
+    name: 'Content/Blog Writing',
+    description: 'At ShyamedTech, we offer professional content and blog writing services that engage, inform, and inspire. Our creative team crafts compelling, SEO-optimized content tailored to amplify your brand’s voice and reach.',
+    stats: '2.9B+ Active Users',
+    color: 'from-pink-500 to-purple-500'
+  }
+  
+
+];
+export { Navigation, Social, Contact, cardContent ,CarouselData,Testimonials,Services,ContactItems,Clients,Platforms};
